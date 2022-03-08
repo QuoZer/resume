@@ -1,0 +1,148 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Matvey} \headerlastnamestyle{Panteleev} \\
+	\vspace{2mm}
+	{\faEnvelope\ m.d.panteleev@gmail.com} | {\faMapMarker\ St. Petersburg, Russian Federation}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BS in Robotics \& Mechatronics}
+	{St.Petersburg Polytechnic University (SPbPU)}
+	{St. Peterburg}
+	{Sep 2018 – June 2022}
+	{GPA: 4.9/5.0}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Robotics Engineer}
+	{Russian State Scientific Center for Robotics and Technical Cybernetics}
+	{St.Petersburg}
+	{November 2021 – Present}
+	{\begin{cvitems}
+		\item {Developed tools for automatic radio channel bandwidth testing.}
+		\item {Participated in robotic systems development in various roles}
+		\end{cvitems}}
+	\cventry
+	{Internship}
+	{Innopolis University}
+	{}
+	{August 2021 – August 2021}
+	{}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Tools:  & {\skill{ C/C++, Python, ROS, OpenCV, Matlab, Embedded Development}} \\
+		CAD:  & {\skill{ Fusion 360, Altium Designer, Solidworks, Visual Components}} \\
+		English:  & {\skill{ C1 (IELTS 8.0)}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{A stereo system based on orthogonally placed fisheye cameras. Allows to get depth data for a wide range of camera configurations.}
+	{Orthogonal Fisheye Stereo Vision System}
+	{OpenCV, C++, Unity}
+	{https://github.com/QuOzer/fisheye\_stereo}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A ROS-controlled 5DoF manipulator based on STM32 MCU}
+	{Manipulator}
+	{C, STM32, ROS}
+	{https://github.com/QuoZer/Tertiarm\_ROS-STM}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A Visual Components based application for cobot programming in VR. The project is being developed into a startup with a state grant help.}
+	{VR Cobot Trainer}
+	{Python, Visual Components}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A ROS wrapper for Unitree A1 quadruped robot API. Tested with SLAM application.}
+	{Quadruped Robot ROS integration}
+	{C++, ROS}
+	{https://github.com/SailorTheMan/unitree\_slam}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+\cvsection{Awards}
+\begin{cvhonors}
+	\cvhonor
+	{NTI Contest winner team}
+	{Assembled and lead a team that won an Intellectual Robotic Systems track of National Technical Initiative Contest.}
+	{Innopolis university}
+	{May 2021}
+\end{cvhonors}
+\ 
+\end{document}
