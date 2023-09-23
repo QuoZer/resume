@@ -31,7 +31,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 %% Color for highlight
 % Define your custom color if you don't like awesome colors
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-orange}
 %\definecolor{awesome}{HTML}{CA63A8}
 %% Colors for text
 %\definecolor{darktext}{HTML}{414141}
@@ -49,19 +49,33 @@
 \begin{center}
 	\headerlastnamestyle{Matvey} \headerlastnamestyle{Panteleev} \\
 	\vspace{2mm}
-	{\faEnvelope\ m.d.panteleev@gmail.com} | {\faMapMarker\ St. Petersburg, Russian Federation}
+	{\faEnvelope\ m.d.panteleev@gmail.com} | {\faMapMarker\ Budapest / Helsinki}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Education}
 \begin{cventries}
+\cventry
+	{MSc in CS for Autonomous Driving (EiT Digital double degree)}
+	{Aalto University + Eotvos Lorand University}
+	{Espoo / Budapest}
+	{Sep 2022 – Present}
+	{ 
+	\begin{cvitems}
+		\item {Relevant coursework: Mobile robot sensor fusion}
+	\end{cvitems}}
+
 	\cventry
-	{BS in Robotics \& Mechatronics}
+	{BSc in Robotics \& Mechatronics}
 	{St.Petersburg Polytechnic University (SPbPU)}
-	{St. Peterburg}
+	{St. Petersburg}
 	{Sep 2018 – June 2022}
-	{GPA: 4.9/5.0}
+	{
+	\begin{cvitems}
+		\item {GPA: 4.9/5.0}
+	\end{cvitems}}
+
 \end{cventries}
 
 \vspace{-2mm}
@@ -71,80 +85,126 @@
 \cvsection{Experience}
 \begin{cventries}
 	\cventry
-	{Robotics Engineer}
+	{Research Assistant}
+	{Intelligent Robotics Group – Aalto University}
+	{Espoo}
+	{June - August 2023}
+	{\begin{cvitems}
+		\item {Implemented a trajectory deforming controller for a collaborative robot. }
+	\end{cvitems}
+	}
+
+	\cventry
+	{Robotics Engineer Intern}
 	{Russian State Scientific Center for Robotics and Technical Cybernetics}
 	{St.Petersburg}
-	{November 2021 – Present}
+	{November 2021 – June 2022}
 	{\begin{cvitems}
-		\item {Developed tools for automatic radio channel bandwidth testing.}
-		\item {Participated in robotic system development in various roles.}
-		\end{cvitems}}
+		\item {Contributed to the development of multiple robots}
+		\item {Utilized ROS with C++ and Python to create and refine perception systems and robot functionality}
+	\end{cvitems}
+	}
+
+	\cventry
+	{Software developer}
+	{R-Pro}
+	{St.Petersburg}
+	{October 2021 – October 2022}
+	{
+	\begin{cvitems}
+		\item {Implemented custom behaviors for objects in Visual Components software using Python}
+		\item {Worked on implementing VR controls for simulations in Visual Components }
+	\end{cvitems}
+	}
+
 	\cventry
 	{Internship}
 	{Innopolis University}
-	{}
+	{Innopolis}
 	{August 2021}
 	{\begin{cvitems}
-		\item {Developed tools for automatic radio channel bandwidth testing.}
-		\end{cvitems}}
-\end{cventries}
-\cvsection{Skills}
-\begin{cventries}
-	\cventry
-	{}
-	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
-		Tools:  & {\skill{ C/C++, Python, ROS, OpenCV, Matlab, Embedded Development}} \\
-		CAD:  & {\skill{ Fusion 360, Altium Designer, Solidworks, Visual Components}} \\
-		English:  & {\skill{ C1 (IELTS 8.0)}} \\
-		\end{tabular}}}
-	{}
-	{}
-	{}
+		\item {Developed a ROS API for a quadruped robot}
+	\end{cvitems}}
 \end{cventries}
 
-\vspace{-7mm}
+\cvsection{Skills}
+	\begin{cvskills}
+		%---------------------------------------------------------
+		\cvskill
+		{Programming} % Category
+		{С/C++ , Python, embedded development (STM32)} % Skills
+		\cvskill
+		{Tools} 
+		{ROS, OpenCV, Linux, Git, Matlab} 
+		\cvskill
+		{CAD} 
+		{Fusion 360, Solidworks, Visual Components, 3D printing software} % Skills
+		\cvskill
+		{Languages} % Category
+		{Russian Native, English Advanced} % Skills
+		% \cvskill
+		% {Embedded} % Category
+		% {STM32 } % Skills		
+	\end{cvskills}
+
+
+% \vspace{-7mm}
 \cvsection{Projects}
 \begin{cventries}
 	\cventry
-	{A stereo system based on orthogonally placed fisheye cameras. Allows to get depth data for a wide range of camera configurations.}
+	{A stereo system based on orthogonally placed fisheye cameras. Allows to obtain depth data for a wide range of camera configurations.}
 	{Orthogonal Fisheye Stereo Vision System}
-	{OpenCV, C++, Unity}
-	{https://github.com/QuOzer/fisheye\_stereo}
+	{C++, OpenCV, Unity}
+	{\href{https://github.com/QuoZer/fy_lib_source}{Repository link}}%}
 	{}
 	
-	\vspace{-5mm}
+	\vspace{-3mm}
 	\cventry
 	{A ROS-controlled 5DoF manipulator based on STM32 MCU}
-	{Manipulator}
+	{DIY Manipulator}
 	{C, STM32, ROS}
-	{https://github.com/QuoZer/Tertiarm\_ROS-STM}
+	{\href{https://github.com/QuoZer/Tertiarm\_ROS-STM}{Repository link}}%}
 	{}
 	
-	\vspace{-5mm}
-	\cventry
-	{A Visual Components based application for cobot programming in VR. The project is being developed into a startup with a state grant help.}
-	{VR Cobot Trainer}
-	{Python, Visual Components}
-	{}
-	{}
+	% \vspace{-5mm}
+	% \cventry
+	% {Developed a Visual Components-based application for industrial robot programming in virtual reality (VR). The project received a grant for future development}
+	% {VR Robot Trainer}
+	% {Python, Visual Components}
+	% { }
+	% { }
 	
-	\vspace{-5mm}
+	\vspace{-3mm}
 	\cventry
-	{A ROS wrapper for Unitree A1 quadruped robot API. Tested with SLAM application.}
+	{Developed in a team a ROS wrapper for the Unitree A1 quadruped robot API, allowing for integration with the Robot Operating System (ROS).}
 	{Quadruped Robot ROS integration}
 	{C++, ROS}
-	{https://github.com/SailorTheMan/unitree\_slam}
-	{}
+	{\href{https://github.com/SailorTheMan/unitree\_slam}{Repository link}}
+	{ }
 	
 	\vspace{-5mm}
 \end{cventries}
+
 \cvsection{Awards}
+
 \begin{cvhonors}
 	\cvhonor
-	{NTI Contest winner team}
-	{Assembled and lead a team that won an Intellectual Robotic Systems track of National Technical Initiative Contest.}
-	{Innopolis university}
-	{May 2021}
+	{EIT Digital Excellence Scholarship}
+	{Awarded a merit-based scholarship by EIT Digital as one of the top students in the program.}
+	{EIT Digital}
+	{2022}
+
+	\cvhonor
+	{Innovation Grant}
+	{Awarded funding to support the development and commercialization of the VR training software project at its initial stage.}
+	{Innovation Promotion Foundation}
+	{2022}
+
+	% \cvhonor
+	% {Competition Achievement}
+	% {Led and contributed to a winning team in the Intellectual Robotic Systems track of the National Technical Initiative (NTI) Contest.}
+	% {Innopolis University}
+	% {2021}
 \end{cvhonors}
 \ 
 \end{document}
